@@ -27,11 +27,14 @@ public class DisplayScan extends AppCompatActivity {
 
         TextView scanned_output = (TextView)findViewById(R.id.textView);
         scanned_output.setText(scanned);
+        dataBase db = new dataBase(DisplayScan.this);
+        db.insertPerscription(scanned);
+
         Button back = (Button) findViewById(R.id.back1);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DisplayScan.this, Next_Page.class);
+                Intent intent = new Intent(DisplayScan.this, Menu.class);
                 startActivity(intent);
                 finish();
             }

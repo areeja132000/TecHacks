@@ -10,33 +10,16 @@
 
     <Button
         android:id="@+id/back1"
-        android:layout_width="84dp"
+        android:layout_width="201dp"
         android:layout_height="38dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:background="#E07A5F"
         android:backgroundTint="#E07A5F"
-        android:text="@string/back"
+        android:text="@string/backToMenu"
         android:textColor="#F4F1DE"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/back"
-        android:layout_width="114dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="40dp"
-        android:background="#E07A5F"
-        android:backgroundTint="#E07A5F"
-        android:text="@string/proceed"
-        android:textColor="#F4F1DE"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,17 +33,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.55">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="315dp"
-                android:layout_height="400dp"
-                android:text="TextView" />
-        </LinearLayout>
-
+            android:text="TextView" />
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

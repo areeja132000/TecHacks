@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F2CC8F"
+    android:backgroundTint="#F2CC8F">
 
     <ImageView
         android:id="@+id/icon_image"
@@ -41,6 +43,7 @@
         android:id="@+id/my_prescriptions_button"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:background="#81B29A"
         android:backgroundTint="#81B29A"
         android:text="@string/my_prescriptions_button"
@@ -51,25 +54,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656" />
+        app:layout_constraintTop_toBottomOf="@+id/next_page"
+        app:layout_constraintVertical_bias="0.016" />
 
     <Button
         android:id="@+id/my_profile_button"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
         android:background="#81B29A"
         android:backgroundTint="#81B29A"
         android:text="My Profile"
         android:textColor="#3D405B"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78" />
+        app:layout_constraintTop_toBottomOf="@+id/my_prescriptions_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

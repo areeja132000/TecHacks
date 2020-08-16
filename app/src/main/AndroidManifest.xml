@@ -22,6 +22,15 @@
         <activity
             android:name="com.example.techacks.DisplayScan"
             android:label="@string/app_name" />
+        <activity
+            android:name="com.example.techacks.Menu"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.techacks.myProfile"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.techacks.Older_Prescriptions_Page"
+            android:label="@string/app_name" />
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
             android:value="ocr" />

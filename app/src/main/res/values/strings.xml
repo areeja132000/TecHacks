@@ -1,10 +1,8 @@
 <resources>
     <string name="app_name">TecHacks</string>
     <string name="next_button">Take Photo</string>
-    <string name="next_page_text">Yo! Yo! Yo!</string>
     <string name="displayScan">Display Scan</string>
-    <string name="scanPrescription">Scan Medicine\'s Label</string>
-    <string name="next_button">New Scan</string>
+    <string name="scanPrescription">Enter Profile</string>
     <string name="next_page_text">Menu</string>
     <string name="hello1">Hello!</string>
     <string name="my_prescriptions_button">My Prescriptions</string>

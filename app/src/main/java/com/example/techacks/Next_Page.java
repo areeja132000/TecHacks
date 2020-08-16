@@ -63,8 +63,8 @@ public class Next_Page extends AppCompatActivity {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
-            ImageView image = (ImageView) findViewById(R.id.imageView);
-            image.setImageBitmap(imageBitmap);
+            ImageView image = (ImageView) findViewById(R.id.icon_image);
+            image.setImageResource(R.drawable.icon);
 
             InputImage imageToPass = InputImage.fromBitmap(imageBitmap, 0);
 
@@ -76,7 +76,6 @@ public class Next_Page extends AppCompatActivity {
                                         @Override
                                         public void onSuccess(Text visionText) {
                                             endResult = processTextBlock(visionText);
-
                                         }
                                     })
                             .addOnFailureListener(

@@ -4,4 +4,14 @@
     <string name="next_page_text">Yo! Yo! Yo!</string>
     <string name="displayScan">Display Scan</string>
     <string name="scanPrescription">Scan Medicine\'s Label</string>
+    <string name="next_button">New Scan</string>
+    <string name="next_page_text">Menu</string>
+    <string name="hello1">Hello!</string>
+    <string name="my_prescriptions_button">My Prescriptions</string>
+    <string name="icon_image">icon_image</string>
+    <string name="back">back</string>
+    <string name="my_profile">My Profile</string>
+    <string name="date_of_birth">Date of Birth:</string>
+    <string name="medical_information">Medical Information:</string>
+    <string name="name">Name:</string>
 </resources>

@@ -19,6 +19,9 @@
         <activity
             android:name="com.example.techacks.Next_Page"
             android:label="@string/app_name" />
+        <activity
+            android:name="com.example.techacks.DisplayScan"
+            android:label="@string/app_name" />
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
             android:value="ocr" />

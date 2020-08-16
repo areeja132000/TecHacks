@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">TecHacks</string>
-    <string name="next_button">Next Page</string>
+    <string name="next_button">Take Photo</string>
     <string name="next_page_text">Yo! Yo! Yo!</string>
+    <string name="displayScan">Display Scan</string>
+    <string name="scanPrescription">Scan Medicine\'s Label</string>
 </resources>

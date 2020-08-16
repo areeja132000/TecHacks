@@ -22,7 +22,10 @@ import com.google.mlkit.vision.text.Text;
 import com.google.mlkit.vision.text.TextRecognition;
 import com.google.mlkit.vision.text.TextRecognizer;
 
+import java.io.Serializable;
+
 public class Next_Page extends AppCompatActivity {
+    String endResult;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +36,16 @@ public class Next_Page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 dispatchTakePictureIntent();
+            }
+        });
+
+        Button displayScan = (Button) findViewById(R.id.displayScan);
+        displayScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Next_Page.this, DisplayScan.class);
+                intent.putExtra("scan", endResult);
+                startActivity(intent);
             }
         });
     }
@@ -62,9 +75,8 @@ public class Next_Page extends AppCompatActivity {
                             .addOnSuccessListener(new OnSuccessListener<Text>() {
                                         @Override
                                         public void onSuccess(Text visionText) {
-                                            String endResult = processTextBlock(visionText);
-                                            TextView myAwesomeTextView = (TextView)findViewById(R.id.recognizedText);
-                                            myAwesomeTextView.setText(endResult);
+                                            endResult = processTextBlock(visionText);
+
                                         }
                                     })
                             .addOnFailureListener(
